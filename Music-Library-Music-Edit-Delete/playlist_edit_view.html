@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <title>Edit</title>
+
+    <!--    Meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+
+
+    <!--icon-->
+    <link rel="icon" type="image/ico" href="images/icon.png">
+
+    <!-- BootStrap CSS-->
+     <link rel="stylesheet" type="text/css" href="css/fontawesome-all.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/music_upload.css">
+    <link rel="stylesheet" type="text/css" href="css/edit_music_menubar.css">
+    <link rel="stylesheet" type="text/css" href="css/edit_music.css">
+    <link rel="stylesheet" href="css/music_catagory.css">
+    <link rel="stylesheet" href="css/album-playlist-container.css">
+
+
+
+</head>
+
+<body>
+    <section id="edit-view-main-container" >
+        <section id="edit-view-menubar">
+            <div id="menubar-container">
+                       <div id="menubar-container-logo">
+                          <div id="edit-topbar-logo">
+                               <img src="components/logo.png">
+                           </div>
+                       </div>
+                       <div id="menubar-container-selections">
+                           <div id="edit-lopbar-profile">
+                               <a href="#">Profile</a>
+                           </div>
+                           <div id="edit-lopbar-songs">
+                               <a href="#">Songs</a>
+                           </div>
+                           <div id="edit-lopbar-albums">
+                               <a href="#">Albums</a>
+                           </div>
+                           <div id="edit-lopbar-playlists">
+                               <a href="#">Playlists</a>
+                           </div>
+                       </div>
+                       <div id="menubar-container-logout">
+                           <div id="edit-lopbar-logout">
+                               <a href="#">Logout</a>
+                           </div>
+                       </div>
+            </div>
+        </section>
+        
+         <section id="music-catagory-section" class="edit-music-full-height">
+            <section class="music-catagory-container">
+                <div class="music-catagory-title">
+                    <p>Catagory</p>
+                </div>
+                <div class="music-catagory-container-inner">
+                    <div class="music-catagory-list">
+<!--                    create album-->
+                    <div class="music-catagory-item">
+                            <div class="music-catagory-item-image">
+                                   <button class="hide-visible-button">
+                                       <img src="components/create_album.png">
+                                      
+                                       <a href="#"> <i class="fas fa-plus"></i></a>
+                                      </button>
+                            </div>
+                            <div class="div-catagory-item-name">
+                                <p>Create Playlist</p>
+                                <p class="catagory-item-artist-small">New</p>
+                            </div>
+                        </div>
+
+   
+<!--   end create album-->
+    <!--                    repeat items-->
+                    
+                        <div class="music-catagory-item">
+                            <div class="music-catagory-item-image">
+                                   <button class="hide-visible-button">
+                                       <img src="components/album_default.jpg">
+
+                                      </button>
+                            </div>
+                            <div class="div-catagory-item-name">
+                                <p>
+                                    <a class="catagory-item-name-bolt" href="#">Item Name</a>
+                                </p>
+                                <p class="album-edit-action">
+                                    <a class="edit-album-edit" href="#"><i class="fas fa-edit"></i></a>
+                                    <a class="edit-album-delete" href="#"><i class="fas fa-times-circle"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        
+
+    <!--                   End repeat items-->
+                    </div>
+                </div>
+
+            </section>
+            
+        </section>
+        
+        
+    </section>
+
+
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/edit_music.js"></script>
+
+</body>
+
+</html>

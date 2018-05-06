@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>player</title>
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/player.css">
+    <link rel="stylesheet" href="css/side_info.css">
+    <link rel="stylesheet" href="css/album-playlist-container.css">
+    <link rel="stylesheet" href="css/main_container.css">
+    <link rel="stylesheet" href="css/music_catagory.css">
+    
+    <link rel="stylesheet" href="css/oth_style.css">
+    
+
+
+</head>
+
+<body>
+    <!--       music player section-->
+    <section id="music-player">
+        <!--           Music Information-->
+        <div id="music-info">
+            <div id="music-img">
+                <img src="components/album_default.jpg">
+            </div>
+            <div id="music-details">
+                <p id="music-name"><a href="#">Something Just Like This</a></p>
+                <p id="music-artist"><a href="#">Chain Smoker</a></p>
+                <p id="music-album"><a href="#">Unknown</a></p>
+            </div>
+            <div id="music-add-to-playlist">
+                <button class="tooltip creatte-artist" id="playlist-add-button">+
+                <span class="tooltiptext">
+                    <div>
+                        <p><a href="#">create playlist</a></p>
+                        <div class="playlist-line"></div>
+                       <a href="#">playlist 1</a><a href="#">playlist 1</a>
+                    </div>
+                </span>
+                </button>
+            </div>
+        </div>
+
+        <!--            Music Status -->
+        <div id="music-control">
+            <div id="button-control">
+                <button id="button-prev">
+                       <img src="components/Pre.png">
+                   </button>
+                <button id="button-play">
+                       <img src="components/Play.png">
+                   </button>
+                <button id="button-next">
+                       <img src="components/Next.png">
+                   </button>
+            </div>
+            <div id="music-play-info">
+                <div id="play-time">00:00</div>
+                <div id="play-control-bar">
+                    <div id="play-status-bar"></div>
+                    <div id="paly-handeler"></div>
+                </div>
+                <div id="total-time">00:00</div>
+            </div>
+        </div>
+        <!--          current play and volume-->
+        <div id="player-volume">
+            <div id="current-play">
+                <button id="current-playlist">
+                   <img src="components/current-playlist.png">
+               </button>
+            </div>
+            <div id="volume-control main">
+                <div id="volume-control">
+                    <button id="volume-down"><p>-</p></button>
+                    <button id="volume-mute">
+                       <img src="components/volume-default.png">
+                   </button>
+                    <button id="volume-up"><p>+</p></button>
+                </div>
+                <div id="volume-control-status">
+                    <div id="volume-control-status-current"></div>
+                    <div id="volume-control-handler"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--        side information bar section-->
+    <section id="side-info-bar">
+        <div id="music-app-logo">
+            <div id="music-app-logo-container">
+                <img src="components/devils-kitchen-logo.png">
+            </div>
+            <div id="music-app-name"><i>Devil's</i> Kitchen</div>
+        </div>
+
+        <div class="side-bar-underline"></div>
+        <div id="music-search">
+            <form id="music-search-form">
+                <div id="music-search-container">
+                    <input id="music-search-text" type="text">
+                    <input id="music-search-submit" type="submit" value="">
+                </div>
+            </form>
+        </div>
+
+
+        <div class="side-bar-underline"></div>
+        <div id="music-playlist-lists">
+            <p><a href="#">HOME</a></p>
+            <p><a href="#">Playlist</a></p>
+            <p><a href="#">save musics</a></p>
+        </div>
+
+        <div class="side-bar-underline"></div>
+        <div id="music-suggetion-list">
+            <p><a href="#">Resently play</a></p>
+            <p><a href="#">Top Music</a></p>
+        </div>
+
+        <div class="side-bar-underline"></div>
+
+
+        <div id="side-bar-profile">
+            <div id="side-bar-profile-pic">
+                <img src="components/profile-default.png">
+            </div>
+            <p><a href="#">Your Name</a></p>
+        </div>
+
+    </section>
+
+    <!--        Main Container-->
+    <section id="main-container">
+       
+<!--       Music Catagory-->
+        <section id="music-catagory-section">
+            <div id="artist-name-containner">
+                <div id="artist-name">
+                  <img src="components/profile-default.png">
+                   <p> Artist Name</p>
+                
+
+                    <button id="artist-about-button">About</button>
+                </div>
+            </div>
+            <section class="music-catagory-container">
+                <div class="music-catagory-title">
+                    <p>Catagory</p>
+                </div>
+                <div class="music-catagory-container-inner">
+                    <div class="music-catagory-list">
+    <!--                    repeat items-->
+                        <div class="music-catagory-item">
+                            <div class="music-catagory-item-image">
+                                   <button class="hide-visible-button">
+                                       <img src="components/album_default.jpg">
+                                      
+                                       <a href="#"> <i class="fas fa-play"></i></a>
+                                      </button>
+                            </div>
+                            <div class="div-catagory-item-name">
+                                <p>
+                                <a class="catagory-item-name-bolt" href="#">Item Name</a></p>
+                                <p><a class="catagory-item-artist-small" href="#">Artist</a></p>
+                            </div>
+                        </div>
+
+    <!--                   End repeat items-->
+                    </div>
+                </div>
+                <div class="music-catagory-more">
+                    <a href="#">SHOW MORE
+                    <i class="fas fa-angle-down"></i>
+                    </a>
+                    
+                </div>
+            </section>
+            
+            
+            <section class="music-catagory-container">
+                <div class="music-catagory-title">
+                    <p>Catagory</p>
+                </div>
+                <div class="music-catagory-container-inner">
+                    <div class="music-catagory-list-single">
+<!--                       Copy from album playlist -->
+                        <div class="album-palylist-music-container">
+
+                                <div class="album-palylist-music-play-button">
+                                    <a href="#"><i class="fas fa-play"></i></a>
+                                </div>
+
+                                <div class="album-palylist-single-music-info">
+                                    <div class="album-palylist-single-music-name">
+                                        <p class="a-p-s-m-name"><a href="#">Song Name</a></p>
+                                    </div>
+                                    <div class="album-palylist-single-music-artist-album">
+                                        <p class="a-p-s-m-art"><a href="#">Artist</a></p>
+                                        <p class="a-p-s-m-dot"></p>
+                                        <p class="a-p-s-m-alb"><a href="#">Album Name</a></p>
+                                    </div>
+                                </div>
+
+
+                                <div class="album-palylist-single-music-duration">
+                                    <p class="a-p-s-m-dur">0:00</p>
+                                </div>
+
+                            </div>
+<!--end copy                    -->
+                    </div>
+                </div>
+                <div class="music-catagory-more">
+                    <a href="#">SHOW MORE
+                    <i class="fas fa-angle-down"></i>
+                    </a>
+                    
+                </div>
+            </section>
+        </section>
+    </section>
+
+
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/player.js"></script>
+</body>
+    
+</html>

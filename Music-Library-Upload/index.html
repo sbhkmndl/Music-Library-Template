@@ -1,0 +1,151 @@
+<html><head>
+    <title>Music Upload | Music Library</title>
+
+    <!--    Meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+
+
+    <!--icon-->
+    <link rel="icon" type="image/ico" href="components/logo.png">
+
+    <!-- BootStrap CSS-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.css">
+    <link rel="stylesheet" type="text/css" href="css/success_message.css">
+    <link rel="stylesheet" type="text/css" href="css/music_upload.css">
+
+
+
+</head>
+
+<body>
+
+    <section id="upload-container-main">
+       <div id="upload-background-blur">
+            <div id="upload-container-inner">
+                <div id="upload-container-middel">
+                    <div id="upload-page-title">
+                   <p>
+                       <a href="/"><img src="components/logo.png"></a>
+                   </p>
+                    <p>Music Library</p>
+                    <p id="upload-page-relation">Music Upload</p>
+                    </div>
+                    <div id="upload-form-container">
+                       
+<!--                       block-->
+                        
+
+<form method="post" action="." enctype="multipart/form-data"> <input type="hidden" name="csrfmiddlewaretoken" value="2aukCLLa8oU2GMFXoCteRHQzJYOLBVpK3ygtQjfsCPqWsmv7PffYsbqtQX7KblZw">
+    <div id="upload-form">
+
+            <p><label for="id_name">Music Name:</label> <input type="text" name="name" maxlength="150" required="" id="id_name"></p>
+<p><label for="id_album">Album:</label> <select name="album" id="id_album">
+  <option value="" selected="">None</option>
+
+  <option value="25">a</option>
+
+</select></p>
+<p><label for="id_artist">Artist:</label> 
+ <select name="artist" required="" id="id_artist">
+  <option value="" selected="">---------</option>
+
+  <option value="2">abca</option>
+
+  <option value="3">abc</option>
+
+</select>
+
+<a class="tooltip creatte-artist" href="#">  <span class="tooltiptext">Add Artist</span>+</a>
+ 
+
+</p>
+
+<p><label for="id_music_type">Type:</label> <select name="music_type" maxlength="50" id="id_music_type">
+  <option value="rock">Rock</option>
+
+  <option value="pop">POP</option>
+
+  <option value="jazz">Jazz</option>
+
+  <option value="classical">Classical</option>
+
+  <option value="romantic">romantic</option>
+
+  <option value="festive">Festive</option>
+
+</select></p>
+<p><label for="id_language">Language:</label> <select name="language" maxlength="50" id="id_language">
+  <option value="english">English</option>
+
+  <option value="hindi">Hindi</option>
+
+  <option value="bengali">Bengali</option>
+
+  <option value="oria">Oria</option>
+
+  <option value="panjabi">Panjabi</option>
+
+  <option value="spanish">Spanish</option>
+
+</select></p>
+<p><label for="id_share">Share:</label> <input type="checkbox" name="share" class="upload-input-check" id="id_share" checked=""></p>
+<p><label for="id_file">Music File:</label> <input type="file" name="file" required="" id="id_file"></p>
+<p><label for="id_music_cover">Cover:</label> <input type="file" name="music_cover" id="id_music_cover"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div id="upload-submit-button">
+        <input type="submit" value="Upload">
+    </div>
+</form>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body></html>
